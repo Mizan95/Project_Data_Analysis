@@ -7,11 +7,24 @@ How well do jobs and skills pay for Data Analysts?
 What is the most optimal skill to learn for Data Analysts? (High Demand AND High Paying)
 
 # Introduction to project
-Welcome to my Python project showing a data analysis of the data job market. This analysis is comprised of an introductory analysis and...
+Welcome to my Python project showing a data analysis of the data job market in 2023. This analysis is comprised of an introductory analysis and six core analyses.
 
 # Intro analysis
 
+# What skills are in in demand for data jobs?
 
+# How do skills trend throughout the year?
+
+# What are the salaries for the most in demand skills? 
+
+# What is the likelihood of a skill appearing in a job? And how does this correlate to its salary?
+
+
+# Addendum: What types of skills appear in jobs? And how does this correlate to its salary?
+do a bar chart showing count and percentage etc.
+
+
+---
 # Top 5 in-demand skills for Data jobs in the UK
 In this analysis, I found that:
 * for Data Analyst roles, SQL and Excel had the highest demand with 43% and 41% respectively
