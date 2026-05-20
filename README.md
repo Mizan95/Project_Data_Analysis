@@ -5,9 +5,12 @@ What are the most demanded skills for the top 3 most popular data roles? (percen
 How are in-demand skills trending for Data Analysts?
 How well do jobs and skills pay for Data Analysts?
 What is the most optimal skill to learn for Data Analysts? (High Demand AND High Paying)
+What are the most optimal skill types for Data Analysts, Data Engineers and Data Scientists?
 
-# Introduction to project
-Welcome to my Python project showing a data analysis of the UK data job market in 2023. This project is comprised of an introductory analysis and six core analyses.
+
+---------------------------------
+# Introduction
+Welcome to my Python project showing a data analysis of the UK data job market in 2023. This project is comprised of an introductory analysis, four core analyses and an addendum.
 In the introductory analysis, I explore:
 - show which companies are most hiring in the UK
 - percentage of jobs are wfh
@@ -17,10 +20,30 @@ In the introductory analysis, I explore:
 
 In the first core analysis, I explore:
 - Which skills have the highest demand across Data Analyst, Data Engineer and Data Scientist job postings
+- What is the likelihood of these skills appearing in Data Analyst, Data Engineer and Data Scientist job postings.
+
+In the second core analysis, I explore:
+- How does the demand for the top 5 skills trend throughout the year?
+
+In the third core analysis, I explore:
+- What are the salaries for the top 5 skills?
+
+In the fourth core analysis, I explore:
+- What are the most optimal skills for an aspiring data professional?
+An optimal skill is one that has a combination on high demand and a high salary
+
+In the addendum, I explore:
+- Which skill types appear in Data Analyst, Data Engineer and Data Scientist job postings?
+- What is the likelihood of skill types appearing in Data Analyst, Data Engineer and Data Scientist job postings?
+
+
+## Approach
+Talk about analysis with groupby and pivot tables. Thereafter, plotting using matplotlib and seaborn libraries. With seaborn libraries there are more visually pleasing effects on the plots.
 
 
 
 # Intro analysis
+- Write findings, comment about approach.
 
 # What skills are in in demand for data jobs?
 
