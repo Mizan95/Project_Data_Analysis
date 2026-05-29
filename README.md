@@ -5,6 +5,17 @@
 ---------------------------------
 # Introduction
 Welcome to my Python project showing a data analysis of the UK data job market in 2023. This project is comprised of an introductory analysis, four core analyses and an addendum.
+
+## Tools I used:
+* Python - the foundational tool used to code my analysis. I also used the following libraries:
+    * Pandas - to analyse the dataset
+    * Matplotlib - to visualise the data
+    * Seaborn - to build more aesthetically pleasing visualisations
+* Jupyter Notebooks - to run my code in separate cells and include my notes and headings for organisation
+* VS Code - the industry standard code editor
+* Git/Github - essential for version-control and publicising my work
+
+## Questions I explore
 In the introductory analysis, I explore the following questions:
 - Which companies are most hiring in the UK?
 - What percentage of jobs are work from home?
@@ -31,25 +42,21 @@ In the addendum, I explore the following questions:
 - What are the most valuable skill types to acquire for a data professional?
 - What is the demand for these skill types compared to their average salaries?
 
-## Tools I used:
-* Python - 
-    * Pandas
-    * Matplotlib
-    * Seaborn
-* Jupyter Notebooks - 
-* VS Code - 
-* Git/Github - 
-
 
 ## Approach
-data cleaning
+Like with all data analysis, projects or pieces of work, it requires a multi-stage approach to get to the desired result. The desired result is usually a clean visualisation that tells a story. And each stage usually has multiple steps.
+### Stage 1 Data cleaning
+A most vital step in data analysis work. If done inadequately, it can lead to skewed data resulting in misleading visualisations. In essence, business decisions need to be made on visualisation stories that are factually true and accurate. So, hereunder are a few examples where I performed data cleaning throughout my project:
 - turning string values into python objects such as values in job_posted_date column
 - turning string values in list objects so they can be exploded such as values in the job_skills column
-- turning dictionaries into lists of tuples so they can be exploded
-- extract month number from
+- turning dictionaries into lists of tuples so they can be exploded and 'unpivoted'
+- extracting month number from a converted Python date object to chronologically order my data
 
+### Stage 2 Group by aggregations
+Group by aggregations are a useful way of quickly aggregating relevant data to uncover insights. At times, group by aggregations can be plotted straight away for simple analyses. However, if a more stringent approach is required to analyse the data, that's where pivot tables come in.
+Below are a few examples where I performed group by aggregations throughout my project:
+- 
 
-group by aggregation
 Aggregate count of jobs over the year
 can be plotted straight away for fundamental analyses, but at times, a more stringent approach is required in the form of pivot tables. Pivot tables provide a more precise approach to aggregating data.
 
