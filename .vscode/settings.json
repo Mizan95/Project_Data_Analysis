@@ -3,7 +3,8 @@
         "groupby",
         "Matplotlib",
         "seaborn",
-        "Seaborn"
+        "Seaborn",
+        "unpivoted"
     ],
     "cSpell.language": "en-GB"
 }

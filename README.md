@@ -44,26 +44,34 @@ In the addendum, I explore the following questions:
 
 
 ## Approach
-Like with all data analysis, projects or pieces of work, it requires a multi-stage approach to get to the desired result. The desired result is usually a clean visualisation that tells a story. And each stage usually has multiple steps.
+Like with all data analyses, projects or pieces of work, it requires a multi-stage approach to get to the desired result. Each stage usually has multiple steps. And the desired result is usually a clean visualisation that tells a story. 
+
 ### Stage 1 Data cleaning
-A most vital step in data analysis work. If done inadequately, it can lead to skewed data resulting in misleading visualisations. In essence, business decisions need to be made on visualisation stories that are factually true and accurate. So, hereunder are a few examples where I performed data cleaning throughout my project:
+The most vital step in data analysis work. If done inadequately, it can lead to skewed data resulting in misleading visualisations. In essence, business decisions need to be made on visualisation stories that are factually true and accurate. So, hereunder are a few examples where I performed data cleaning throughout my project:
 - turning string values into python objects such as values in job_posted_date column
-- turning string values in list objects so they can be exploded such as values in the job_skills column
-- turning dictionaries into lists of tuples so they can be exploded and 'unpivoted'
-- extracting month number from a converted Python date object to chronologically order my data
+- in core-analysis-1, turning string values in list objects so they can be exploded such as values in the job_skills column
+- in the addendum, turning dictionaries into lists of tuples so they can be exploded and 'unpivoted'
+- in core-analysis-2, extracting month number from a converted Python date object to chronologically order my data
 
 ### Stage 2 Group by aggregations
-Group by aggregations are a useful way of quickly aggregating relevant data to uncover insights. At times, group by aggregations can be plotted straight away for simple analyses. However, if a more stringent approach is required to analyse the data, that's where pivot tables come in.
+Group by aggregations are a useful way of quickly aggregating relevant data to uncover insights. At times, group by aggregations can be plotted straight away for simple analyses. However, if a more stringent approach is required to analyse the data, then pivot tables offer a precise solution for that.
 Below are a few examples where I performed group by aggregations throughout my project:
-- 
+- in introductory-analysis, grouping the companies by the number of jobs they have posted
+- in core-analysis-1, grouping skills and job titles by the number of skills mentioned within the job titles
+- in core-analysis-3, grouping skills by their count and adding a calculation for their median salaries
 
-Aggregate count of jobs over the year
-can be plotted straight away for fundamental analyses, but at times, a more stringent approach is required in the form of pivot tables. Pivot tables provide a more precise approach to aggregating data.
+### Stage 3 Pivot tables
+Pivot tables offer a very granular way to analyse data. Columns can be rearranged to become the index or remain as columns. Calculations can also be applied to the cells of a pivot table along with the option to merge pivot tables in the way tables are merged in SQL. With such a massive level of customisation, pivot tables are a common tool for an effective data professional, just as a kitchen knife is to a chef.
+So, hereunder are a few examples where I utilised pivot tables throughout my project:
+- In core-analysis-2, pivoting the data to uncover the number of skill mentions throughout the year
+- In the addendum, to gain insight into the number of skill mentions in jobs for a target list of data profession job titles
+- In core-analysis-2, uncovering the percentage of skills mentioned throughout the year in job postings.
 
-pivot tables
+### Stage 4 Create a subset of data
+This involves reducing the dataset in the pivot table to only what values I wish to plot and assigning it to a variable. For example, out of a list of 100 skills, it is usually preferred to plot the top 10 skills. These top 10 skills can be extracted using the .head() method and assigned to a variable called top_10_skills. 
+By using this approach, this reduces clutter on the final plot and allows ease of reading and accessibility. Creating a subset of data is an essential solution as it also removes the need to directly change the code blocks that plot the analysis. One can simply pass in the subset of data into the plot as opposed to the entire pivot table.
 
-create a subset of data
-This is an essential maintainable code solution as it removes the need to directly change the code blocks that plot the analysis.
+
 
  plot
  I primarily used the industry standard Seaborn library to plot my analyses. This allows more visually pleasing plots akin to styled graphs in Microsoft Excel. However, there have been challenges in the case of adding data labels to scatter plots in particular. In a wysiwyg program such as Microsoft Excel, adding data labels is a matter of a a few clicks. Whereas, using the Seaborn library or Matplotlib for that matter, the operation can be more than a few lines of code. A good example of this is the subplots plotted in the final analysis of the addendum.
