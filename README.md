@@ -15,6 +15,8 @@ Welcome to my Python project showing a data analysis of the UK data job market i
 * VS Code - the industry standard code editor
 * Git/Github - essential for version-control and publicising my work
 
+---------------
+Perhaps remove this?
 ## Questions I explore
 In the introductory analysis, I explore the following questions:
 - Which companies are most hiring in the UK?
@@ -41,7 +43,7 @@ A valuable skill is one that has a combination on high demand and a high salary
 In the addendum, I explore the following questions:
 - What are the most valuable skill types to acquire for a data professional?
 - What is the demand for these skill types compared to their average salaries?
-
+---------------
 
 ## Approach
 Like with all data analyses, projects or pieces of work, it requires a multi-stage approach to get to the desired result. Each stage usually has multiple steps. And the desired result is usually a clean visualisation that tells a story. 
@@ -70,16 +72,16 @@ So, hereunder are a few examples where I utilised pivot tables throughout my pro
 ### Stage 4 Create a subset of data
 This involves reducing the dataset in the pivot table to only what values I wish to plot and assigning it to a variable. For example, out of a list of 100 skills, it is usually preferred to plot the top 10 skills. These top 10 skills can be extracted using the .head() method and assigned to a variable called top_10_skills. 
 By using this approach, this reduces clutter on the final plot and allows ease of reading and accessibility. Creating a subset of data is an essential solution as it also removes the need to directly change the code blocks that plot the analysis. One can simply pass in the subset of data into the plot as opposed to the entire pivot table.
+I used the subsets of data approach throughout my project.
 
+### Stage 5 Plot the data
+I primarily used the industry standard Seaborn library to plot my analyses. This allows more visually pleasing plots akin to styled graphs in Microsoft Excel. However, there have been challenges in the case of adding data labels to scatter plots in particular. In a wysiwyg program such as Microsoft Excel, adding data labels is a matter of a few clicks. Whereas, using the Seaborn library (or Matplotlib for that matter), the operation can be more than a few lines of code. A good example of this is the subplots plotted in the final analysis of the addendum.
+I plotted data throughout my project using the subsets of data approach outlined above.
 
-
- plot
- I primarily used the industry standard Seaborn library to plot my analyses. This allows more visually pleasing plots akin to styled graphs in Microsoft Excel. However, there have been challenges in the case of adding data labels to scatter plots in particular. In a wysiwyg program such as Microsoft Excel, adding data labels is a matter of a a few clicks. Whereas, using the Seaborn library or Matplotlib for that matter, the operation can be more than a few lines of code. A good example of this is the subplots plotted in the final analysis of the addendum.
-
-
-
-# Intro analysis
-- Write findings, comment about approach.
+Next I will describe my findings in this project.
+perhaps summarise findings.
+## Intro analysis
+- Write findings, comment about approach if needed. 
 
 # What skills are in in demand for data jobs?
 
