@@ -2,7 +2,13 @@
 
 
 # Introduction
-Welcome to my Python project showing a data analysis of the UK data job market in 2023. This project is comprised of an introductory analysis, four core analyses and an addendum.
+Welcome to my Python project showing a data analysis of the UK data job market in 2023. This project is comprised of an introductory analysis, four core analyses and an addendum. I explore the following questions:
+* What are the top 5 data jobs?
+* What skills are in in demand for data jobs?
+* What are the salaries for the most in demand skills?
+* What are the most valuable skills? Valuable means that they have a combination of high demand and salary.
+* What types of skills appear in Data Analyst, Data Engineer and Data Scientist jobs? And how does this correlate to their salary?
+
 
 ## Tools I used:
 * Python - the foundational tool used to code my analysis. I also used the following libraries:
