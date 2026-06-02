@@ -239,36 +239,48 @@ plt.show();
 Next I will describe my findings in this project.  
 
 perhaps summarise findings.
-## Introductory analysis
+# Introductory analysis
 I found that the top 5 data jobs were: Data Engineer, Data Analyst, Data Scientist, Senior Data Engineer and Senior Data Scientist.
 
 ![](assets\001.png)  
 
 This suggests that data engineering and data analyst roles lead because companies must build infrastructure and find immediate business value before they can run complex AI models. Most UK businesses are still in the early stages of data adoption, creating a massive foundational demand for these two specific skillsets.     
 
-## What skills are in in demand for data jobs?
+# What skills are in in demand for data jobs?
 I found that the top 5 skills in demand for data jobs were: SQL, Python, Azure, AWS and Excel.
 
 ![](assets\002.png) 
 
 This suggests that SQL and Python are the top two skills because they are the universal languages of data, required across all data engineering, analysis, and science roles. With Azure and AWS competing for demand of cloud technologies.
 
-## What are the salaries for the most in demand skills? 
+# What are the salaries for the most in demand skills? 
 I found that the top 5 skills with the highest median salaries were: AWS, Python, Tableu, SQL and Excel.
 
 ![](assets\003.png) 
 
 This suggests that companies are willing to pay a premium for cloud based skills such as AWS commanding a premium of $131,000. This is whilst foundational skills such as Python and SQL still make it into the top 5 with median salaries of $111,000 and $105,000 respectively.
 
-## What are the most valuable skills? Valuable means that they have a combination of high demand and salary.
+# What are the most valuable skills? Valuable means that they have a combination of high demand and salary.
 I found that the most valuable skills are a mixture of foundational tools (Python, SQL), cloud technologies (AWS, Azure, GCP) and analyst tools (Power BI, Tableu, Excel).
 
 ![](assets\004.png) 
 
 This suggests that a competent data professional needs to have foundational tools such as Python and SQL as they take up 59% and 56% of job postings. Whilst companies are willing to pay higher for more specialist cloud technologies such as AWS and Azure. Analyst tools such as Power BI and Tableu also feature indicating that a competent data analyst should look to having experience with these specific analyst tools.
 
-# Addendum: What types of skills appear in jobs? And how does this correlate to its salary?
-do a bar chart showing count and percentage etc.
+# Addendum: What types of skills appear in Data Analyst, Data Engineer and Data Scientist jobs? And how does this correlate to their salary?
+I found that core programming skills are the absolute priority across all three roles, serving as the highest-demand skill type overall. Data analysts rely heavily on analyst tools which reflects their dominance in the analyst tools space. Whilst data engineers have the dominance in cloud type skills which reflects their role in building scalable cloud infrastructure.
 
+![](assets\005.png)  
 
----
+## How does this correlate to their salary?
+I found that for data analysts, analyst tools and programming dominate the vast majority of job postings commanding a median salary of between $80,000 to $100,000 respectively. Moreover, databases along with cloud technologies command a higher pay and have few jobs indicating their niche yet valuable skill type.
+
+For data engineers, cloud and programming skill types dominate with salaries of betweem $100,000 and $110,000. It also seems useful for a cloud engineer to know analyst tools as although they consist of only 15% of jobs, they command a high median salary of nearly $140,000.
+
+For data scientists, programming skills dominate taking nearly half of job posting mentions at 49% and with a median salary of $91,000. It is also valuable for a data scientist to know cloud technologies as they consist of 19% of jobs and with a median salary of $113,000.
+
+![](assets\006.png) 
+
+# Challenges I faced
+I faced a number of challenges which provided very ideal opportunities to learn:
+* Unclean data:  
