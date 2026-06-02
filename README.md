@@ -241,20 +241,24 @@ Next I will describe my findings in this project.
 # Analysis
 
 ## Introductory analysis
+Link to file can be found [here](Introductory-analysis.ipynb)  
+
 I found that the top 5 data jobs were: Data Engineer, Data Analyst, Data Scientist, Senior Data Engineer and Senior Data Scientist.
 
 ![](assets\001.png)  
 
-This suggests that data engineering and data analyst roles lead because companies must build infrastructure and find immediate business value before they can run complex AI models. Most UK businesses are still in the early stages of data adoption, creating a massive foundational demand for these two specific skillsets.     
+This suggests that data engineering and data analyst roles lead because companies must build infrastructure and find immediate business value before they can run complex AI models. Most UK businesses are still in the early stages of data adoption, creating a massive foundational demand for these two specific skillsets.      
 
 ## What skills are in in demand for data jobs?
+Link to file can be found [here](Core-analysis-2_Trend_Skills_in_Year.ipynb)  
 I found that the top 5 skills in demand for data jobs were: SQL, Python, Azure, AWS and Excel.
 
 ![](assets\002.png) 
 
 This suggests that SQL and Python are the top two skills because they are the universal languages of data, required across all data engineering, analysis, and science roles. With Azure and AWS competing for demand of cloud technologies.
 
-## What are the salaries for the most in demand skills? 
+## What are the salaries for the most in demand skills?
+Link to file can be found [here](Core-analysis-3_Salaries_Most_Indemand_Skills.ipynb)  
 I found that the top 5 skills with the highest median salaries were: AWS, Python, Tableu, SQL and Excel.
 
 ![](assets\003.png) 
@@ -262,6 +266,7 @@ I found that the top 5 skills with the highest median salaries were: AWS, Python
 This suggests that companies are willing to pay a premium for cloud based skills such as AWS commanding a premium of $131,000. This is whilst foundational skills such as Python and SQL still make it into the top 5 with median salaries of $111,000 and $105,000 respectively.
 
 ## What are the most valuable skills? Valuable means that they have a combination of high demand and salary.
+Link to file can be found [here](Core-analysis-4_Most_Valuable_Skills.ipynb)  
 I found that the most valuable skills are a mixture of foundational tools (Python, SQL), cloud technologies (AWS, Azure, GCP) and analyst tools (Power BI, Tableu, Excel).
 
 ![](assets\004.png) 
@@ -269,6 +274,7 @@ I found that the most valuable skills are a mixture of foundational tools (Pytho
 This suggests that a competent data professional needs to have foundational tools such as Python and SQL as they take up 59% and 56% of job postings. Whilst companies are willing to pay higher for more specialist cloud technologies such as AWS and Azure. Analyst tools such as Power BI and Tableu also feature indicating that a competent data analyst should look to having experience with these specific analyst tools.
 
 ## Addendum: What types of skills appear in Data Analyst, Data Engineer and Data Scientist jobs? And how does this correlate to their salary?
+Link to file can be found [here](Addendum_Most_Valuable_Skill_Types.ipynb)  
 I found that core programming skills are the absolute priority across all three roles, serving as the highest-demand skill type overall. Data analysts rely heavily on analyst tools which reflects their dominance in the analyst tools space. Whilst data engineers have the dominance in cloud type skills which reflects their role in building scalable cloud infrastructure.
 
 ![](assets\005.png)  
@@ -290,3 +296,7 @@ I faced a number of challenges which provided very ideal opportunities to learn 
 * Complex Visualisations: I had to use a matter of good judgement to decide on which visualisation fitted the purpose of the story. It can be easy to get carried away in building complex visualisations. However, in my opinion, simple visualisations are usually the best in conveying clear and compelling stories.
 
 * Resilience: This project took over a month to complete and defining a well-thought layout and direction of the project was a really good learning experience in planning and executing this project.
+
+# Conclusion
+In conclusion, this analysis into the job market proved incredibly informative highlighting the skills needed for data professionals. It shows that having a grasp of the fundamental tools such as Python and SQL is beneficial across the board for a data professional aspiring to be either a data analyst, engineer or scientist. Whilst specialising in more specialised tools is beneficial to progress in any of those three fields.
+This project also gave me a stellar opportunity to showcase my skills in cleaning, analysing and presenting complex datasets with Python and the adjoining tools such as Matplotlib, Pandas and Seaborn. It was also a pleasure in writing up the README file demonstrating my writing and explanatory skills.
