@@ -28,7 +28,7 @@ The most vital step in data analysis work. Data cleaning usually relies on impor
 If the process of data cleaning is done inadequately, it can lead to skewed data resulting in misleading visualisations. Misleading visualisations can lead to incorrect business decisions hindering business progress. In essence, business decisions need to be made on visualisation stories that are factually true and accurate. And factually true and accurate visualisation stories rely on clean data. 
 So, hereunder are a few examples where I imported the relevant libraries and performed data cleaning throughout my project:
 NB: I have added comments to aid understanding.
-- importing the relevant libraries
+- importing the relevant libraries using the import and as statements whilst using industry standard naming conventions such as sns and plt
 ``` python
 # Importing Libraries
 import ast # For string conversion into list object, and string conversion into dictionary object.
@@ -46,7 +46,7 @@ dataset = load_dataset('lukebarousse/data_jobs')
 df = dataset['train'].to_pandas()
 ```
 
-- turning string values into python date object which can be further manipulated and analysed
+- turning string values into python date objects using the pandas function .to_datetime so they can be further manipulated and analysed
 ``` python
 # Data Cleanup
 # make datetime string into datetime object
@@ -54,13 +54,14 @@ df['job_posted_date'] = pd.to_datetime(df['job_posted_date'])
 
 ```
 
-- in core-analysis-1, turning string values in list objects so they can be exploded such as values in the job_skills column
+- in core-analysis-1, turning string values in list objects using the ast.literal_eval function so they can be exploded such as values in the job_skills column
 ``` python
 # in column job_skills, make list from string into panda series (list) object using ast.literal_eval
 df["job_skills"] = df["job_skills"].apply(lambda skill_list: ast.literal_eval(skill_list) if pd.notna(skill_list) else None)
 ```
 
-- in the addendum, turning dictionaries into lists of tuples so they can be exploded and 'unpivoted'.  
+- in the addendum, turning dictionaries into lists of tuples so they can be exploded and 'unpivoted'.
+- in the addendum, turning strings into dictionaries using the ast.literal_eval function so they can be exploded and 'unpivoted'.  
 This involved a 6-step process. And to better show the effect of each step on the manipulated dataframe, I exported the output of each step into separate CSV files. The CSV files can be accessed [here](files_csv_convert_dictionaries_to_explodable_list/)
 ``` python
 # This essential wrapper function checks if there are strings in column job_type_skills and catches if there are na values
@@ -74,7 +75,7 @@ def safe_parse_dict(val):
  # Apply safe_parse_dict function to values in column job_type_skills
 df_UK_copy["job_type_skills"] = df_UK_copy["job_type_skills"].apply(safe_parse_dict)
 ```
-- in core-analysis-2, extracting month number from a converted Python date object to chronologically order my data
+- in core-analysis-2, extracting month number from a converted Python date object using .dt.month attribute to chronologically order my data
 ``` python
 df_UK["job_posted_month_no"] = df_UK["job_posted_date"].dt.month
 ```
@@ -214,7 +215,7 @@ plt.ylabel("Skill")
 plt.tight_layout()
 ```
 
-- in core-analysis-1, I plotted the highest skills in data job postings
+- in core-analysis-1, I plotted the highest skills in data job postings based on job title
 ``` python
 # Set up grid layout and figure size
 fig, ax = plt.subplots(len(job_list), 1, figsize=(7, 10))
