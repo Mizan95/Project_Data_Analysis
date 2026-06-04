@@ -20,10 +20,10 @@ Welcome to my Python project showing a data analysis of the UK data job market i
 * Git/Github - essential for version-control and publicising my work
 
 
-## Approach
+# Approach
 Like with all data analyses, projects or pieces of work, it requires a multi-stage approach to get to the desired result. Each stage usually has multiple steps. And the desired result is usually a clean visualisation that tells a story.
 
-### Stage 1 - Importing Relevant Libraries and Data cleaning
+## Stage 1 - Importing Relevant Libraries and Data cleaning
 The most vital step in data analysis work. Data cleaning usually relies on importing the relevant libraries to perform the necessary tasks.
 If the process of data cleaning is done inadequately, it can lead to skewed data resulting in misleading visualisations. Misleading visualisations can lead to incorrect business decisions hindering business progress. In essence, business decisions need to be made on visualisation stories that are factually true and accurate. And factually true and accurate visualisation stories rely on clean data. 
 So, hereunder are a few examples where I imported the relevant libraries and performed data cleaning throughout my project:
@@ -80,7 +80,7 @@ df_UK_copy["job_type_skills"] = df_UK_copy["job_type_skills"].apply(safe_parse_d
 df_UK["job_posted_month_no"] = df_UK["job_posted_date"].dt.month
 ```
 
-### Stage 2 - Group by aggregations
+## Stage 2 - Group by aggregations
 Group by aggregations are a useful way of quickly aggregating relevant data to uncover insights. At times, group by aggregations can be plotted straight away for simple analyses. However, if a more stringent approach is required to analyse the data, then pivot tables offer a precise solution for that.
 Below are a few examples where I performed group by aggregations throughout my project:
 - in introductory-analysis, grouping the companies by the number of jobs they have posted
@@ -116,7 +116,7 @@ df_UK_top_skills = (df_UK_exploded
                 )
 ```
 
-### Stage 3 - Pivot tables
+## Stage 3 - Pivot tables
 Pivot tables offer a very granular way to analyse data. Columns can be rearranged to become the index or remain as columns. Calculations can also be applied to the cells of a pivot table along with the option to merge pivot tables in the way tables are merged in SQL. With such a massive level of customisation, pivot tables are a common tool for an effective data professional, just as a kitchen knife is to a chef.
 So, hereunder are a few examples where I utilised pivot tables throughout my project:
 - In core-analysis-2, pivoting the data to uncover the number of skill mentions throughout the year
@@ -145,7 +145,7 @@ skills_job_pivot = df_UK_group.pivot_table(
 ```
 
 
-### Stage 4 - Create a subset of data
+## Stage 4 - Create a subset of data
 This involves reducing the dataset in the pivot table to only what values I wish to plot and assigning it to a variable. For example, out of a list of 100 skills, it is usually preferred to plot the top 10 skills. Using subsets of data reduces clutter on the final plot and allows ease of reading and accessibility. 
 Subsets are also essential as they remove the need to directly change the code blocks that plot the analysis.
 I used the subsets of data approach throughout my project. Below are some examples:
@@ -171,7 +171,7 @@ df_top_10
 ```
 
 
-### Stage 5 - Plot the data
+## Stage 5 - Plot the data
 I primarily used the industry standard Seaborn library to plot my analyses. This allows more visually pleasing plots akin to styled graphs in Microsoft Excel. However, there have been challenges in the case of adding data labels to scatter plots in particular. In a wysiwyg program such as Microsoft Excel, adding data labels is a matter of a few clicks. Whereas, using the Seaborn library (or Matplotlib for that matter), the operation can be more than a few lines of code. A good example of this added complexity is the subplots plotted in the final analysis of the addendum.
 I plotted data throughout my project using the subsets of data approach outlined above. Below are some examples:
 
